@@ -10,7 +10,7 @@ void create_array(std::ifstream &txt, int* a, int size)
 	std::cout << std::endl;
 }
 
-void write_to_file(std::ofstream& txt, int* a, int size)
+void write_to_file(std::ofstream &txt, int* a, int size)
 {
 	txt << size << std::endl;
 	txt << a[size-1] << " ";
@@ -18,20 +18,17 @@ void write_to_file(std::ofstream& txt, int* a, int size)
 	{
 		txt << a[i-1] << " ";
 	}
-	//txt << a[0] << std::endl;
 	txt << std::endl;
 }
 
 void add_to_file(std::ofstream &txt, int* a, int size)
 {
 	txt << size << std::endl;
-	//txt << a[size-1] << " ";
 	for (int i = 1; i < size; i++)
 	{
 		txt << a[i] << " ";
 	}
 	txt << a[0] << std::endl;
- 	//txt << std::endl;
 }
 
 int main()
